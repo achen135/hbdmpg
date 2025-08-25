@@ -1,0 +1,86 @@
+.stats-screen-wrapper {
+  background: linear-gradient(135deg, #ffe6f0, #fffafc);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.stats-text {
+  position: absolute;
+  top: 3vh;
+  margin: 0;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 6vw;
+  color: #ff6f91;
+  text-shadow: 2px 2px 0px white, 4px 4px 10px rgba(255, 182, 193, 0.6);
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 8vh;
+}
+
+.stat {
+  background: #ffb6c1;
+  border-radius: 3vw;
+  padding: 1.25vw;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 2vw;
+  width: 55vw;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  max-height: 6vh;
+  border: 3x dashed #ff88a6;
+  box-shadow: 0px 6px 15px rgba(255, 182, 193, 0.4);
+  position: relative;
+}
+
+.stat::before {
+  content: "🌸";
+  position: absolute;
+  left: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5vw;
+  opacity: 0.7;
+}
+
+.stat-details {
+  opacity: 0;
+  margin-top: 1vh;
+  font-size: 1.5vw;
+  color: #fffafc;
+  transition: opacity 0.4s ease;
+}
+
+#long-text {
+  font-size: 1vw;
+}
+
+.stat:hover {
+  max-height: 10vh;
+  background: #ff99b8;
+  transform: scale(1.03);
+}
+
+.stat:hover .stat-details {
+  opacity: 1;
+}
+
+.next-button{ 
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 2vw;
+  cursor: pointer;
+}

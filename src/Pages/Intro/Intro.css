@@ -1,0 +1,84 @@
+.intro-screen-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cake-image {
+  position: absolute;
+  top: 40vh;
+  width: 30vw;
+  height: auto;
+} 
+
+.pandj-image {
+  position: absolute;
+  left: 2vw;
+  top: 45vh;
+} 
+
+.eevee-image {
+  position: absolute;
+  right: 3vw;
+  top: 30vh;
+}
+
+.jungwon-image {
+  position: absolute;
+  right: 10vw;
+  top: 60vh;
+}
+
+.smiski-image {
+  position: absolute;
+  left: 5vw;
+  top: 65vh;
+}
+
+.kageyama-image {
+  position: absolute;
+  left: 3vw;
+  top: 18vh;
+}
+
+.sanrio-image {
+  position: absolute;
+  left: 22vw;
+  top: 35vh;
+}
+
+.labubu-image {
+  position: absolute;
+  left: 20vw;
+  top: 67vh;
+}
+
+.sukuna-image {
+  position: absolute;
+  left: 60vw;
+  top: 30vh;
+}
+
+.next-image {
+  position: absolute;
+  left: 40vw;
+  top: 78vh;
+}
+
+.next-image:hover {
+  cursor: pointer;
+}
+
+.hbd-text {
+  position: absolute;
+  top: -5vh;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 8vw;
+}
+
+#deco {
+  width: 16vw;
+  height: auto;
+}
