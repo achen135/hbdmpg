@@ -4,7 +4,7 @@ import './Stats.css'
 const Stats = () => {
 
   const handleClick = () => {
-  const section = document.getElementById('letter')
+  const section = document.getElementById('game')
     if(section) {
       section.scrollIntoView()
     }

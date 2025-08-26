@@ -1,0 +1,64 @@
+.letter-wrapper {
+  background: linear-gradient(180deg, #ffe6f0 0%, #ffd6eb 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.letter-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #ff4d88;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(255, 150, 200, 0.4);
+}
+
+.letter-paper {
+  background: #fff;
+  width: 90%;
+  max-width: 800px;
+  height: 70vh; /* fixed height so it can scroll */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  padding: 20px 40px;
+  position: relative;
+  line-height: 1.8;
+
+  /* lined paper effect */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 29px,
+    #ffe6f0 30px
+  );
+  background-size: 100% 30px;
+
+  overflow-y: auto; /* scroll within the letter */
+  scrollbar-width: thin;
+  scrollbar-color: #ff99cc #ffe6f0;
+}
+
+/* Custom scrollbar for Webkit (Chrome/Edge/Safari) */
+.letter-paper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.letter-paper::-webkit-scrollbar-track {
+  background: #ffe6f0;
+  border-radius: 8px;
+}
+
+.letter-paper::-webkit-scrollbar-thumb {
+  background: #ff99cc;
+  border-radius: 8px;
+}
+
+.letter-content {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3rem;
+  color: #444;
+  white-space: pre-wrap;
+}
